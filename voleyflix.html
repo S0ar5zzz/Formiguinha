@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOLEYFLIX - Beach Volleyball Training</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for a more modern look */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Ensure the iframe is responsive */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 0.75rem; /* rounded corners for the video */
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body class="bg-pink-100 text-black min-h-screen flex flex-col items-center py-8 px-4 sm:px-6 lg:px-8">
+    <!-- Header Section -->
+    <header class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-pink-700 mb-8 mt-4 uppercase tracking-wider text-shadow-lg rounded-full px-6 py-3 bg-white bg-opacity-70 shadow-xl">
+        VOLEYFLIX
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="w-full max-w-4xl bg-white bg-opacity-90 p-6 sm:p-8 md:p-10 rounded-xl shadow-2xl border-2 border-pink-200">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center mb-4 text-pink-800">TREINAMENTO DE BEACHVOLEY 🏐</h1>
+        <p class="text-lg sm:text-xl text-center mb-6 text-gray-700 font-medium">#voley #beachvolleyball #training</p>
+
+        <!-- Video Player -->
+        <div class="video-container mb-8 shadow-xl">
+            <!-- Note: The YouTube URL provided in the original request was for a watch page.
+                 For embedding, it should be an embed URL. I've assumed a corrected embed URL for demonstration.
+                 If the original video isn't embeddable, it might require a different approach or a publicly embeddable video.
+                 A common pattern is 'https://www.youtube.com/embed/{video_id}' -->
+            <iframe
+                src="https://www.youtube.com/embed/_4YfIxUlhi8"
+                title="YouTube video player - Beach Volleyball Training"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Placeholder for more content -->
+        <section class="text-gray-700 mt-6">
+            <h2 class="text-2xl font-semibold mb-3 text-pink-700">Aprimore suas habilidades na areia!</h2>
+            <p class="mb-4 leading-relaxed">
+                Bem-vindo ao VOLEYFLIX, seu portal para o aprimoramento no beachvolleyball! Este vídeo de treinamento é apenas o começo. Aqui você encontrará dicas essenciais, exercícios práticos e insights para elevar seu jogo ao próximo nível. Seja você um iniciante buscando os fundamentos ou um jogador experiente querendo refinar suas técnicas, temos algo para você.
+            </p>
+            <p class="mb-4 leading-relaxed">
+                Fique ligado para mais conteúdos, incluindo treinos específicos para saque, recepção, levantamento, ataque e defesa. Com dedicação e o material certo, suas jogadas na areia serão imbatíveis!
+            </p>
+            <p class="leading-relaxed">
+                Explore a seção de comentários do vídeo para interagir com outros entusiastas do vôlei de praia e compartilhar suas experiências de treinamento. Vamos juntos nessa jornada! 🚀
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer (optional, but good practice) -->
+    <footer class="mt-8 text-gray-600 text-sm text-center">
+        &copy; 2025 VOLEYFLIX. All rights reserved.
+    </footer>
+</body>
+</html>
